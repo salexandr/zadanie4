@@ -43,7 +43,7 @@ header img {
 
 .main {
 	display: inline-block;
-  	width: 53px;
+  	width: 56px;
     text-align: center;
 }
 
@@ -67,7 +67,7 @@ header img {
 	border-bottom:1px solid #128aa7;
 }
 
-nav ul {
+ul {
     display: block;
     margin: 0;
     padding: 0;
@@ -79,39 +79,40 @@ nav ul {
 	box-shadow: 0 2px 2px 2px #404040;
 }
 
-nav ul img {
-	width: 5px;
-	height: 6px;
-	margin-left: 6px;
+li span {
+	display: block;
+	float: right;
+	margin: 4px;
+	font-size: 8px;
 }
 
-nav ul:after {
+ul:after {
     display: block;
     content: ' ';
     clear: both;
     float: none;
 }
 
-nav ul.menu > li {
+ul.menu > li {
     float: left;
     position: relative;
 
 }
 
-nav ul.menu > li > a {
+ul.menu > li > a {
     display: block;
-    padding: 11px 35px;
+    padding: 11px 34px;
     color: white;
 	background-image: -moz-linear-gradient(top,#373737, #303030);
 	background-image:-webkit-gradient(linear, left top, left bottom, from(#373737), to(#303030));
     text-decoration: none;
 }
 
-nav ul.menu > li > a:hover {
+ul.menu > li > a:hover {
     background-color: #343434;
 }
 
-nav ul.submenu {
+ul.submenu {
     display: none;
     position: absolute;
     width: 150px;
@@ -121,11 +122,11 @@ nav ul.submenu {
 	border: none;
 }
 
-nav ul.submenu > li {
+ul.submenu > li {
     display: block;
 }
 
-nav ul.submenu > li > a {
+ul.submenu > li > a {
     display: block;
     padding: 10px;
     color: white;
@@ -133,11 +134,11 @@ nav ul.submenu > li > a {
     text-decoration: none;
 }
 
-nav ul.submenu > li > a:hover {
+ul.submenu > li > a:hover {
     text-decoration: underline;
 }
 
-nav ul.menu > li:hover > ul.submenu {
+ul.menu > li:hover > ul.submenu {
     display: block;
 }
 
@@ -182,6 +183,10 @@ nav ul.menu > li:hover > ul.submenu {
 	margin: 0px 15px;
 	font-size: 14px;
 	color: #424c43;
+}
+
+.news p:last-child {
+	margin-bottom: 15px;
 }
 
 .clearfix: after{
